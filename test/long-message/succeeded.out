@@ -1,0 +1,6 @@
+✓ Exported dependency names can be resolved.
+# Resolving an unknown dependency fails.
+✓ Resolving an unknown dependency fails.ncy: "dummy"." should start with "Unre# tests 3
+# pass  3
+✓ ok
+
