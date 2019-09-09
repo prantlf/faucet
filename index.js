@@ -38,13 +38,13 @@ module.exports = function (opts) {
             var s = trim(res.name.trim());
             out.push(sprintf(
                 '\x1b[1m\x1b[' + c + 'm%s\x1b[0m\n',
-                trim((res.ok ? '✓' : '⨯') + ' ' +  s)
+                trim((res.ok ? '✓' : '⨯') + ' ' +  s, res.ok)
             ));
             return;
         }
         
         var fmt = '\r  %s \x1b[1m\x1b[' + c + 'm%d\x1b[0m %s\x1b[K';
-        var str = sprintf(fmt, ok, res.number, res.name);
+        var str = sprintf(fmt, ok, res.number, trim(res.name, res.ok));
         
         if (!res.ok) {
             var y = (++ test.offset) + 1;
@@ -104,9 +104,10 @@ module.exports = function (opts) {
         out.push('\r');
     }
     
-    function trim (s) {
+    function trim (s, ok) {
         if (opts.width && s.length > opts.width - 2) {
-            s = s.slice(0, opts.width - 5) + '...';
+            var more = ok ? 0 : 4;
+            s = s.slice(0, opts.width - 5 - more) + '...';
         }
         return s;
     }
