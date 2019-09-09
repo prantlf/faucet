@@ -10,13 +10,13 @@
     "test": "tape test/**/*.js | node bin/cmd"
   },
   "dependencies": {
-    "through2": "~0.2.3",
-    "tap-parser": "~0.4.0",
+    "through2": "~3.0.1",
+    "tap-parser": "~0.7.0",
     "duplexer": "~0.1.1",
-    "sprintf-js": "~1.1.1",
-    "tape": "~2.3.2",
-    "minimist": "0.0.5",
-    "defined": "0.0.0"
+    "sprintf-js": "~1.1.2",
+    "tape": "~4.11.0",
+    "minimist": "1.2.0",
+    "defined": "1.0.0"
   },
   "repository": {
     "type": "git",
