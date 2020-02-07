@@ -1,6 +1,13 @@
-# faucet
+# @prantlf/faucet
 
-human-readable TAP summarizer
+[![NPM version](https://badge.fury.io/js/%40prantlf%2Ffaucet.svg)](http://badge.fury.io/js/%40prantlf%2Ffaucet)
+[![Build Status](https://travis-ci.org/prantlf/faucet.png)](https://travis-ci.org/prantlf/faucet)
+[![Dependency Status](https://david-dm.org/prantlf/faucet.svg)](https://david-dm.org/prantlf/faucet)
+[![devDependency Status](https://david-dm.org/prantlf/faucet/dev-status.svg)](https://david-dm.org/prantlf/faucet#info=devDependencies)
+
+Human-readable TAP summarizer
+
+this fork with fixes issues [24] and [30]
 
 # example
 
@@ -27,7 +34,7 @@ using the `tape` command internally:
 To get the `faucet` command, with [npm](https://npmjs.org) do:
 
 ```
-npm install -g faucet
+npm install -g @prantlf/faucet
 ```
 
 # generating TAP
@@ -142,3 +149,6 @@ usage:
 # license
 
 MIT
+
+[24]: https://github.com/substack/faucet/issues/24
+[30]: https://github.com/substack/faucet/issues/30
