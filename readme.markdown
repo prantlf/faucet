@@ -7,7 +7,7 @@
 
 Human-readable TAP summarizer
 
-this fork with fixes issues [24] and [30]
+this fork fixes issues [24] and [30]
 
 # example
 
